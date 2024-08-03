@@ -17,22 +17,46 @@ Es un bot que basado en la documentacion interna de una empresa induce al nuevo 
 python -m venv <nombre de la carpeta del entorno virtual>
 ```
 
-3. Actualizar pip con el comando
+3. Activar el entorno
+
+- linux o mac
+
+```bash	
+cd <nombre de la carpeta del entorno virtual>
+source bin/activate
+```	
+
+- windows (cmd)
+
+```cmd
+cd <nombre de la carpeta del entorno virtual>
+cd Scripts
+activate
+```
+
+- windows (powershell)
+
+```powershell
+cd <nombre de la carpeta del entorno virtual>
+.\Scripts\activate.ps1
+```	
+
+4. Actualizar pip con el comando
 
 ```bash
-python -m pip install --upgrade pip
+(nombre de entrno virtual) C:\carpeta> python -m pip install --upgrade pip
 ```
 
 O ejecutando el script get_pip.py
 
 ```bash
-python get-pip.py
+(nombre de entrno virtual) C:\carpeta> python get-pip.py
 ```
 
 4. Instalar las dependencias con el comando
 
 ```bash
-pip install -r requirements.txt
+(nombre de entrno virtual) C:\carpeta> pip install -r requirements.txt
 ```
 
 > El archivo requirements.txt contiene las dependencias que se van a instalar en el entorno virtual, hay mas de las necesarias para este proyecto, pero se recomienda tenerlas para proyectos que requieran otros recursos.
@@ -40,13 +64,19 @@ pip install -r requirements.txt
 5. Guardar la api_key de open ai en el archivo .env
 
 ```bash
-OPENAI_API_KEY = <api_key>
+OPENAI_API_KEY = "tu api_key"
 ```
 
 6. Crear un kernel global para jupyter (Opcional)
 
 ```bash
-python -m ipykernel install --user --name <nombre del kernel> --display-name <nombre del kernel>
+(nombre de entrno virtual) C:\carpeta> python -m ipykernel install --user --name <nombre del kernel> --display-name <nombre del kernel>
 ```
 
 7. Iniciar jupyter O Visual Studio Code
+
+8. Desactivar el entorno
+
+```bash
+(nombre de entrno virtual) C:\carpeta> deactivate
+```

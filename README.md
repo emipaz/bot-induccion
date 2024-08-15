@@ -6,7 +6,7 @@ Es un bot que basado en la documentacion interna de una empresa induce al nuevo 
 
 ## Requisitos
 
-1. Python 3.8 o superior globalmente
+1. Python == 3.10 
 
 ### Crear un entorno virtual
 
